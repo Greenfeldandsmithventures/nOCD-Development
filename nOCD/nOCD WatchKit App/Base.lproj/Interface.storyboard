@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Im Having an Episode Now and Need Help" id="i6M-pb-z1d">
+                            <color key="backgroundColor" red="0.078431372549019607" green="0.72549019607843135" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                            <connections>
+                                <segue destination="o24-bK-YQP" kind="push" id="afd-1m-1aB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="I Just Had an Episode, and Treated Myself" id="4qv-Dk-nB4">
+                            <color key="backgroundColor" red="0.078431372549019607" green="0.72549019607843135" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                            <connections>
+                                <segue destination="ZED-xo-6LH" kind="push" id="y9x-vE-9Fe"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="3:08" id="ZGS-Go-9nC"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="293"/>
+        </scene>
+        <!--Resolved Thoughts Interface Controller-->
+        <scene sceneID="RTM-te-M2w">
+            <objects>
+                <controller id="ZED-xo-6LH" customClass="ResolvedThoughtsInterfaceController">
+                    <items>
+                        <button alignment="left" id="R48-KT-WY7">
+                            <group key="contentGroup" width="1" alignment="left" id="Wi5-Sb-jtv">
+                                <items>
+                                    <imageView alignment="left" image="imgWUp" id="Duy-9Q-r0B"/>
+                                    <label alignment="left" verticalAlignment="center" text="I Used ERP Well" textAlignment="center" numberOfLines="2" id="c3Y-JG-uPO">
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                            </group>
+                            <connections>
+                                <action selector="btnUseERPTap" destination="ZED-xo-6LH" id="ltO-q6-deJ"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" verticalAlignment="center" id="CN9-fX-630">
+                            <group key="contentGroup" width="1" alignment="left" id="Gbo-cO-3U5">
+                                <items>
+                                    <imageView alignment="left" image="iconWUnknown" id="MpE-FQ-WJr"/>
+                                    <label alignment="left" verticalAlignment="center" textAlignment="center" numberOfLines="2" id="GNt-Qk-N3p">
+                                        <string key="text">I Don't Know If 
+I Used ERP</string>
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <action selector="btnUndecidedTap" destination="ZED-xo-6LH" id="8aT-O9-T5f"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" verticalAlignment="bottom" id="8UL-e7-bTS">
+                            <group key="contentGroup" width="1" alignment="left" id="Lgd-qk-kFI">
+                                <items>
+                                    <imageView alignment="left" image="imgWDown" id="waw-5B-C6f"/>
+                                    <label alignment="left" verticalAlignment="center" text="I Didn't Use ERP" textAlignment="center" numberOfLines="2" id="cAb-y6-YGh">
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                            </group>
+                            <connections>
+                                <action selector="btnDontUseERPTap" destination="ZED-xo-6LH" id="5nI-0f-M3i"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="647"/>
+        </scene>
+        <!--Thoughts Interface Controller-->
+        <scene sceneID="8cu-eY-wIy">
+            <objects>
+                <controller id="o24-bK-YQP" customClass="ThoughtsInterfaceController">
+                    <items>
+                        <button alignment="left" id="dEV-qp-a33">
+                            <group key="contentGroup" width="1" alignment="left" id="2wo-BP-s30">
+                                <items>
+                                    <imageView alignment="left" image="iconWObsession" id="gg1-EC-h4h"/>
+                                    <label alignment="left" verticalAlignment="center" textAlignment="center" numberOfLines="2" id="gr4-ff-8op">
+                                        <string key="text">I'm having an 
+Obsession</string>
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <segue destination="2Vi-de-muq" kind="push" id="gEk-ZV-al2"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" verticalAlignment="center" id="TnN-8c-zfu">
+                            <group key="contentGroup" width="1" alignment="left" id="5Pt-Si-QVk">
+                                <items>
+                                    <imageView alignment="left" image="iconWUnknown" id="To8-br-2vT"/>
+                                    <label alignment="left" verticalAlignment="center" textAlignment="center" numberOfLines="2" id="K6X-dc-8bI">
+                                        <string key="text">I don't know 
+what I'm having</string>
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <segue destination="h8a-HA-buO" kind="push" id="QBV-JV-1hC"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" verticalAlignment="bottom" id="14C-Uv-Z8V">
+                            <group key="contentGroup" width="1" alignment="left" id="XJ4-df-670">
+                                <items>
+                                    <imageView alignment="left" image="iconWCompulsion" id="mYM-kF-R39"/>
+                                    <label alignment="left" verticalAlignment="center" textAlignment="center" numberOfLines="2" id="KjI-tg-cb9">
+                                        <string key="text">I'm having an 
+Compulsion</string>
+                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <segue destination="1Ug-B9-q5w" kind="push" id="OQM-Hc-nQZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="428" y="293"/>
+        </scene>
+        <!--CompulsiveInterfaceController-->
+        <scene sceneID="GMS-tr-Nbe">
+            <objects>
+                <controller identifier="CompulsiveInterfaceController" id="1Ug-B9-q5w" customClass="CompulsiveInterfaceController">
+                    <items>
+                        <label alignment="center" text="Choose your Compulsive Theme:" textAlignment="center" numberOfLines="0" id="ETD-Kj-lTw">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Proceed to Exposure" id="H4h-dG-1Pv">
+                            <color key="backgroundColor" red="0.19607843137254902" green="0.22745098039215686" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="btnProceedToExpouseTap" destination="1Ug-B9-q5w" id="Bdb-Mw-GJM"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="tev-Hy-btq">
+                            <items>
+                                <tableRow identifier="ObsThemesRow" id="Dol-JC-xHW" customClass="ObsThemesRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="oNp-p4-nqt">
+                                        <items>
+                                            <label width="0.90000000000000002" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="wpw-ZL-2Gd">
+                                                <color key="textColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <imageView alignment="right" verticalAlignment="center" image="imgWArrowBlue" id="YKt-oy-hZI"/>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bgGroup" destination="oNp-p4-nqt" id="TdJ-iD-dPU"/>
+                                        <outlet property="imgArrow" destination="YKt-oy-hZI" id="SXg-Uv-UWZ"/>
+                                        <outlet property="themeNameLabel" destination="wpw-ZL-2Gd" id="EXt-vG-kFM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="lblTitle" destination="ETD-Kj-lTw" id="rNM-Ez-8F2"/>
+                        <outlet property="tblThemes" destination="tev-Hy-btq" id="aI7-A6-DEI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="626" y="908"/>
+        </scene>
+        <!--UndecidedInterfaceController-->
+        <scene sceneID="h6C-vJ-lux">
+            <objects>
+                <controller identifier="UndecidedInterfaceController" id="h8a-HA-buO" customClass="UndecidedInterfaceController">
+                    <items>
+                        <label alignment="center" text="Choose One Undecided Theme:" textAlignment="center" numberOfLines="0" id="8tC-az-QDL">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Proceed to Exposure" id="Rep-rt-Thx">
+                            <color key="backgroundColor" red="0.1960784314" green="0.2274509804" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="btnProceedToExpouseTap" destination="2Vi-de-muq" id="5oD-bg-msb"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="cT9-SX-h1i">
+                            <items>
+                                <tableRow identifier="ObsThemesRow" id="faO-2G-mHI" customClass="ObsThemesRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rtG-Zu-lRb">
+                                        <items>
+                                            <label width="0.90000000000000002" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="csp-6u-u9y">
+                                                <color key="textColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <imageView alignment="right" verticalAlignment="center" image="imgWArrowBlue" id="HY4-C6-Wcy"/>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bgGroup" destination="rtG-Zu-lRb" id="2FZ-r7-ira"/>
+                                        <outlet property="imgArrow" destination="HY4-C6-Wcy" id="4XE-QM-eBp"/>
+                                        <outlet property="themeNameLabel" destination="csp-6u-u9y" id="K3N-wn-mbb"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="HeaderRow" id="hhP-eN-aoR" customClass="HeaderRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="9D8-Fg-Rl4">
+                                        <items>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="O" textAlignment="center" numberOfLines="0" id="swt-pY-ugg">
+                                                <color key="textColor" red="0.2470588235" green="0.66274509800000003" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="swt-pY-ugg" id="5sA-ao-ts5"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="lblTitle" destination="8tC-az-QDL" id="gt6-Z0-1mo"/>
+                        <outlet property="tbl" destination="cT9-SX-h1i" id="tkm-aR-zsE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="649" y="574"/>
+        </scene>
+        <!--ObsessionalInterfaceController-->
+        <scene sceneID="80m-0j-aep">
+            <objects>
+                <controller identifier="ObsessionalInterfaceController" id="2Vi-de-muq" customClass="ObsessionalInterfaceController">
+                    <items>
+                        <label alignment="center" text="Choose your Obsessional Theme:" textAlignment="center" numberOfLines="0" id="vN9-17-Re5">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Proceed to Exposure" id="qUm-1w-tRr">
+                            <color key="backgroundColor" red="0.19607843137254902" green="0.22745098039215686" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="btnProceedToExpouseTap" destination="2Vi-de-muq" id="gDb-VQ-MQf"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="kQx-N4-UMS">
+                            <items>
+                                <tableRow identifier="ObsThemesRow" id="8nE-NS-eU7" customClass="ObsThemesRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Tl9-3s-wZz">
+                                        <items>
+                                            <label width="0.90000000000000002" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="xED-VQ-Ucl">
+                                                <color key="textColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <imageView alignment="right" verticalAlignment="center" image="imgWArrowBlue" id="UE1-kL-d3X"/>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bgGroup" destination="Tl9-3s-wZz" id="ba8-QL-ICI"/>
+                                        <outlet property="imgArrow" destination="UE1-kL-d3X" id="Bph-Xe-LW0"/>
+                                        <outlet property="themeNameLabel" destination="xED-VQ-Ucl" id="3Tf-oO-o9b"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="lblTitle" destination="vN9-17-Re5" id="G7o-K3-MwW"/>
+                        <outlet property="tblThemes" destination="kQx-N4-UMS" id="QSu-XA-0tw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="649" y="293"/>
+        </scene>
+        <!--TriggerInterfaceController-->
+        <scene sceneID="eRL-vW-pgS">
+            <objects>
+                <controller identifier="TriggerInterfaceController" id="Wyl-ol-O04" customClass="TriggerInterfaceController">
+                    <items>
+                        <label alignment="center" text="CHOOSE YOUR TRIGGER" textAlignment="center" numberOfLines="0" id="imI-CO-3ba">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <table alignment="left" id="Gh4-LU-BBJ">
+                            <items>
+                                <tableRow identifier="ObsThemesRow" id="ieg-l2-xCt" customClass="ObsThemesRow">
+                                    <group key="rootItem" width="1" alignment="left" id="PtJ-e9-YVq">
+                                        <items>
+                                            <label width="0.90000000000000002" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="4be-K5-8Uk">
+                                                <color key="textColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <imageView alignment="right" verticalAlignment="center" image="imgWArrowBlue" id="O4B-eT-HdW"/>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bgGroup" destination="PtJ-e9-YVq" id="ZZS-r4-9zS"/>
+                                        <outlet property="imgArrow" destination="O4B-eT-HdW" id="reZ-pn-iHX"/>
+                                        <outlet property="themeNameLabel" destination="4be-K5-8Uk" id="ofX-yb-hET"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Proceed to Exposure" id="YQX-SQ-JFW">
+                            <color key="backgroundColor" red="0.1960784314" green="0.2274509804" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="btnProceedToExpouseTap" destination="2Vi-de-muq" id="eso-l6-gv7"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tblThemes" destination="Gh4-LU-BBJ" id="4Nf-Ih-3Ww"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="827" y="293"/>
+        </scene>
+        <!--ExposureAndAcceptanceInterfaceController-->
+        <scene sceneID="h6Y-lC-br6">
+            <objects>
+                <controller identifier="ExposureAndAcceptanceInterfaceController" spacing="8" id="u9j-W1-tIx" customClass="ExposureAndAcceptanceInterfaceController">
+                    <items>
+                        <label alignment="center" text="Exposure &amp; Acceptance" textAlignment="center" numberOfLines="0" id="I3F-Yh-zId">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="&quot;Maybe I've caught Ebola, maybe I haven't; I'll accept the uncertainty and move on!&quot;" textAlignment="center" numberOfLines="0" id="sq8-Dg-Lvg">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Proceed to Diverting" id="Spc-GN-6ed">
+                            <color key="backgroundColor" red="0.19607843137254902" green="0.22745098039215686" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lZU-gQ-WOI" kind="push" id="lb5-ao-v8l"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="845" y="590.5"/>
+        </scene>
+        <!--Diverting Interface Controller-->
+        <scene sceneID="HzD-Y6-pYD">
+            <objects>
+                <controller id="lZU-gQ-WOI" customClass="DivertingInterfaceController">
+                    <items>
+                        <label alignment="center" text="Diverting:" textAlignment="center" numberOfLines="0" id="ZYb-MJ-v6N">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="&quot;Press Button and Open Phone to Start Diverting&quot;" textAlignment="center" numberOfLines="0" id="Br8-Sa-gf1"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="--&gt;" id="mZ4-Xb-mFO">
+                            <color key="backgroundColor" red="0.078431372550000003" green="0.72549019609999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1100" y="610"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="34"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="34"/>
+        </scene>
+    </scenes>
+</document>
